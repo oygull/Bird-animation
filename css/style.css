@@ -6,7 +6,147 @@
   box-sizing: border-box;
 }
 body {
-  min-height: 100vh;
+ background-color: #18233e;
+}
+.container{
+  width: 400px;
+  height: 400px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+ 
+}
+.bird-main{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  
+}
+.first-part{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 1s ease;
+}
+.container:hover .first-part{
+  transform: rotate(180deg);
+}
+.first-part-inner{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  left: 50%;
+  border-radius: 0 130px 130px 0;
+  background-color: #a12a15;
+}
+.second-part{
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+}
+.container:hover .second-part-inner{
+  transform: rotate(180deg);
+}
+.second-part-inner{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: 1s ease-in;
+}
+.second-part-sub{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background-color: #fff;
+  border-radius: 0px 90px 90px 0px;
+}
+.third-part{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: 1s ease-in;
+}
+.container:hover .third-part{
+  transform: rotate(-180deg);
+}
+.third-part-inner{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  border-radius: 0 0 90px 0;
+  background-color: #e7e7e7;
+}
+.fourth-part{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  transition: 1s ease-in;
+}
+.container:hover .fourth-part{
+  transform: rotate(-270deg);
+}
+.fourth-part-inner{
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top:0;
+  left: 0;
+  border-radius: 90px 0 0 0;
+  background-color: #f6ce41;
+}
+.fifth-part{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  z-index: 3;
+  transition: 1s ease-in;
+}
+.container:hover .fifth-part{
+  transform: rotate(270deg);
+}
+.fifth-part-inner{
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  top:50%;
+  left: 25%;
+  border-radius: 0  0 0 90px;
+  background-color: #f7a501;
+}
+.eyes{
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  top:15%;
+  left:55%;
+  z-index: 4;
+  border-radius: 50%;
+  background-color: #000000;
+  transition: 0.5s ease;
+}
+.container:hover .eyes{
+  transform: translate(-60px, 0px);
 }
